@@ -1,0 +1,25 @@
+{
+    "name": "sajjad-rakhshani/laravel-opt",
+    "description": "simple package to send and verify otp",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "LaravelOpt\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "keywords" : [
+        "php", "sms", "otp"
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "authors": [
+        {
+            "name": "sajjad-rakhshani",
+            "email": "sajjad.rakhsjani@gmail.com"
+        }
+    ]
+}
