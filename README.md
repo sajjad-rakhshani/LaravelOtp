@@ -13,23 +13,11 @@ in laravel 10 : config/app.php => providers
 ```php
     \LaravelOtp\Providers\OtpServiceProvider::class
 ```
-### define your sms gateway in .env file
-```text
-OtpGateway='your gateway'
+publish config file : 
+```bash
+php artisan vendor:publish --tag=laravel-otp-config
 ```
-available : Log
-
-default : Log
-### define otp code lifetime (in seconds) in .env file
-```text
-OtpExpire=120
-```
-default : 120
-### define otp code digits in .env file
-```text
-OtpDigits=5
-```
-default : 5
+then specify your details in published file
 ## usage
 ### send otp
 ```php
