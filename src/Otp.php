@@ -32,14 +32,6 @@ class Otp extends Facade
         return 0;
     }
 
-    private static function setText($code)
-    {
-        $class = self::getFacadeRoot();
-        if ($class instanceof IpPanel) self::text(['code' => $code]);
-        elseif ($class instanceof MeliPayamak) self::text([$code]);
-        return $class;
-    }
-
     /**
      * save and send otp code to user
      */
@@ -48,6 +40,6 @@ class Otp extends Facade
         $config = config('laravel-otp');
         $code = self::save($mobile);
         if ($code == 0) return false;
-        return self::setText($code)->to($mobile)->pattern($config['patterns']['otp-code'])->send();
+        return self::to($mobile)->text(['code' => $code])->pattern($config['patterns']['otp-code'])->send();
     }
 }
