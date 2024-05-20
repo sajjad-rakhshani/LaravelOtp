@@ -28,6 +28,6 @@ class OtpServiceProvider extends ServiceProvider
         ], 'laravel-otp-migrations');
         $this->publishes([
             __DIR__.'/../config' => config_path()
-        ], 'laravel-otp-config');
+        ], 'laravel-assets');
     }
 }
