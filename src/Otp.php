@@ -1,17 +1,14 @@
 <?php
-namespace LaravelOtp;
+namespace SajjadRakhshani\LaravelOtp;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\Facades\Log;
-use IrSmsGates\Gateways\IpPanel;
-use IrSmsGates\Gateways\MeliPayamak;
-use PHPUnit\Framework\Constraint\IsInstanceOf;
 
 class Otp extends Facade
 {
     protected static function getFacadeAccessor() : string
     {
-        return "IrSmsGates\\Gateways\\" . config('laravel-otp.gateway');
+        return "SajjadRakhshani\\IrSmsGates\\Gateways\\" . config('laravel-otp.gateway');
     }
 
     public static function save(string $mobile) : int

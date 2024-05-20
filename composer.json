@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "SajjadRakhshani\\LaravelOpt\\": "src/"
+            "SajjadRakhshani\\LaravelOtp\\": "src/"
         }
     },
     "minimum-stability": "dev",
