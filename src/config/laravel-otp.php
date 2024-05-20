@@ -7,14 +7,14 @@ return [
         'file' => storage_path('logs/laravel.log')
     ],
     'melipayamak' => [
-        'username' => '09905593854',
-        'password' => '137513941404@Aa'
+        'username' => 'your username',
+        'password' => 'your password'
     ],
     'ippanel' => [
-        'api_key' => 'Ga1pirhLfrarTB4aY6PJF6HIJVenmaRVYM8PlfAN0VA=',
-        'from' => '+983000505'
+        'api_key' => 'your api key',
+        'from' => 'send from'
     ],
     'patterns' => [
-        'otp-code' => '83oawq7hbl8g7pk'
+        'otp-code' => 'your otp code pattern'
     ]
 ];
