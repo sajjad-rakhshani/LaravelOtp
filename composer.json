@@ -14,7 +14,8 @@
         "php", "sms", "otp"
     ],
     "require": {
-        "php": "^8.0"
+        "php": "^8.0",
+        "sajjad-rakhshani/ir-sms-gates" : "^1.0"
     },
     "authors": [
         {
