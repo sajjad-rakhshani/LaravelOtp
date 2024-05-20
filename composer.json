@@ -22,15 +22,5 @@
             "name": "sajjad-rakhshani",
             "email": "sajjad.rakhsjani@gmail.com"
         }
-    ],
-    "extra": {
-        "laravel" : {
-            "providers" : [
-                "LaravelOtp\\Providers\\OtpServiceProvider"
-            ],
-            "dont-discover": [
-                "*"
-            ]
-        }
-    }
+    ]
 }
