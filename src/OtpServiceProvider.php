@@ -1,5 +1,5 @@
 <?php
-namespace LaravelOtp\Providers;
+namespace LaravelOtp;
 use Illuminate\Support\ServiceProvider;
 use IrSmsGates\Gateways\IpPanel;
 use IrSmsGates\Gateways\Log;
