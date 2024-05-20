@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "LaravelOpt\\": "src/"
+            "SajjadRakhshani\\LaravelOpt\\": "src/"
         }
     },
     "minimum-stability": "dev",
@@ -22,15 +22,5 @@
             "name": "sajjad-rakhshani",
             "email": "sajjad.rakhsjani@gmail.com"
         }
-    ],
-    "extra": {
-        "laravel" : {
-            "providers" : [
-                "LaravelOtp\\OtpServiceProvider"
-            ],
-            "dont-discover": [
-                "*"
-            ]
-        }
-    }
+    ]
 }
