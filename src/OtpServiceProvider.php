@@ -4,6 +4,7 @@ use Illuminate\Support\ServiceProvider;
 use SajjadRakhshani\IrSmsGates\Gateways\IpPanel;
 use SajjadRakhshani\IrSmsGates\Gateways\Log;
 use SajjadRakhshani\IrSmsGates\Gateways\MeliPayamak;
+use SajjadRakhshani\IrSmsGates\Gateways\SmsIr;
 
 class OtpServiceProvider extends ServiceProvider
 {
@@ -19,7 +20,7 @@ class OtpServiceProvider extends ServiceProvider
             return (new IpPanel(config('laravel-otp.ippanel.api_key')))->from(config('laravel-otp.ippanel.from'));
         });
         $this->app->bind('SajjadRakhshani\\IrSmsGates\\Gateways\\SmsIr', function (){
-            return (new IpPanel(config('laravel-otp.smsir.api_key')));
+            return (new SmsIr(config('laravel-otp.smsir.api_key')));
         });
     }
 
