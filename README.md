@@ -3,7 +3,7 @@ LaravelOtp is a laravel package to send otp codes to user.
 ## installation
 use the composer to install LaravelOtp.
 ```bash
-composer require sajjad-rakhshani/LaravelOtp
+composer require sajjad-rakhshani/laravel-opt
 ```
 then add your details in config/laravel-otp.php
 ## usage
