@@ -18,6 +18,9 @@ class OtpServiceProvider extends ServiceProvider
         $this->app->bind('SajjadRakhshani\\IrSmsGates\\Gateways\\IpPanel', function (){
             return (new IpPanel(config('laravel-otp.ippanel.api_key')))->from(config('laravel-otp.ippanel.from'));
         });
+        $this->app->bind('SajjadRakhshani\\IrSmsGates\\Gateways\\SmsIr', function (){
+            return (new IpPanel(config('laravel-otp.smsir.api_key')));
+        });
     }
 
     public function boot() : void
